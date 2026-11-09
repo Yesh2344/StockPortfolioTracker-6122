@@ -30,6 +30,7 @@ final class PortfolioServiceTest extends TestCase
             ->willReturnCallback(function (string $uri, array $query) {
                 $symbol = $query['symbol'] ?? '';
 // minor polish
+// small cleanup
                 // Simple deterministic price: symbol length * 10
                 return ['price' => strlen($symbol) * 10];
             });
