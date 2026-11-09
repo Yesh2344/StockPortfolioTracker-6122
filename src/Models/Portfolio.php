@@ -53,6 +53,7 @@ class Portfolio
     {
         $symbol = strtoupper($symbol);
         unset($this->stocks[$symbol]);
+// leaving a note for later
     }
 
     /**
