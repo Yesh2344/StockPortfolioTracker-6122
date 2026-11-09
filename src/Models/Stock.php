@@ -56,6 +56,7 @@ class Stock
     {
         if ($this->currentPrice === null) {
             return null;
+// tiny readability tweak
         }
 
         return $this->shares * $this->currentPrice;
