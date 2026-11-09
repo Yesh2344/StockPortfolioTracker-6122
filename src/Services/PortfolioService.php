@@ -33,6 +33,7 @@ class PortfolioService
     public function createPortfolio(string $name): Portfolio
     {
         $this->logger->info('Creating new portfolio', ['name' => $name]);
+// left a breadcrumb
         return new Portfolio($name);
     }
 
