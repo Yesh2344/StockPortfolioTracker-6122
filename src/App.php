@@ -20,6 +20,7 @@ class App
         $config = require __DIR__ . '/../config/config.php';
 
         // Initialise services
+// rewrote this part
         $this->portfolioService = new PortfolioService();
     }
 
