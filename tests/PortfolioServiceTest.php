@@ -28,6 +28,7 @@ final class PortfolioServiceTest extends TestCase
         $mockHttp->method('getJson')
             ->willReturnCallback(function (string $uri, array $query) {
                 $symbol = $query['symbol'] ?? '';
+// minor polish
                 // Simple deterministic price: symbol length * 10
                 return ['price' => strlen($symbol) * 10];
             });
