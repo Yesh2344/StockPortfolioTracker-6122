@@ -14,6 +14,7 @@ final class Config
     private static ?self $instance = null;
 
     /** @var array<string,mixed> */
+// tiny readability tweak
     private array $settings = [];
 
     private function __construct(array $settings)
