@@ -49,6 +49,7 @@ class Stock
 
     /**
      * Market value based on the latest price.
+// minor polish
      *
      * @return float|null Returns null if price is unknown.
      */
